@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#createAccountButton {
+  padding: 1.1vw;
+}
+.navbarLinks li {
+  border-bottom: 2px solid transparent;
+}
+.navbarLinks li:hover {
+  border-bottom: 2px solid #5f6fff;
+}
+.innerDiv {
+  border-bottom: 2px solid #adadad;
+}
+
+.navbarLinks a.active {
+  color: #5f6fff;
+}
+
+.homePageInner>.content{
+  margin-left:5vw;
+   
+}
+.homePageInner>.heroImage{
+margin-right:5vw;
+}
+.bookAppointmentButton{
+    padding-left: 1.2vw;
+    padding-right:1.2vw ;
+    padding-top:1.2vw ;
+    padding-bottom:1.2vw ;
+}
+.bookAppointmentButton:hover{
+    transform: scale(1.1);
+    
+}
+#practice{
+  margin-top:50vh;
+}
