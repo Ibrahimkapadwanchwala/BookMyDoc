@@ -1,5 +1,6 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import React from 'react';
+import { assets } from '../src/assets/BookMyDoc_assets/assets/assets_frontend/assets';
+import { useNavigate } from 'react-router-dom';
 const Header = () => {
      const navigate=useNavigate();
   return (
@@ -10,7 +11,7 @@ const Header = () => {
           Book Appointment With Trusted Doctors 
         </h1>
         <div className="bookAppointmentContent flex text-white">
-          <img src="../src/assets/BookMyDoc_assets/assets\assets_frontend\group_profiles.png" alt="" />
+          <img src={assets.group_profiles} alt="" />
           <p className='text-md'>
             Simply browse through our extensive list of trusted doctors,
 schedule your appointment hassle-free.
@@ -18,11 +19,11 @@ schedule your appointment hassle-free.
         </div>
         <button onClick={()=>navigate('/Appointment')} className='cursor-pointer flex bg-white bookAppointmentButton rounded-full w-[15vw] justify-center text-[#595959] gap-[1.2vw]'>
           Book Appointment
-          <img src="../src/assets/BookMyDoc_assets/assets\assets_frontend\arrow_icon.svg" alt="" /> 
+          <img src={assets.arrow_icon} alt="" /> 
         </button>
         </div>
         <div className="heroImage relative h-[100%] w-[50%] ">
-          <img src="../src/assets/BookMyDoc_assets/assets\assets_frontend\header_img.png" alt="Header image" className='absoulte bottom-0 h-[100%]'/>
+          <img src={assets.header_img} alt="Header image" className='absoulte bottom-0 h-[100%]'/>
         </div>
       </div>
     </div>

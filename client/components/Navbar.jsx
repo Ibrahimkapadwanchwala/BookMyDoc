@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
+import { assets } from '../src/assets/BookMyDoc_assets/assets/assets_frontend/assets';
 const Navbar = () => {
     const navigate=useNavigate();
     const[token,setToken]=useState(true);
@@ -7,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="outerDiv  h-[15vh] w-[100vw] flex justify-center">
         <div className="innerDiv h-[100%] w-[80%]  flex items-center justify-between">
-            <img src="../src/assets/BookMyDoc_assets/assets/assets_frontend/Logo.png" alt="Logo" className='h-[100%] cursor-pointer ' onClick={()=>navigate('/')}/>
+            <img src={assets.logo} alt="Logo" className='h-[100%] cursor-pointer ' onClick={()=>navigate('/')}/>
             <ul className='flex  gap-20 navbarLinks text-xl font-medium'>
                 <NavLink to='/'>
                     <li>
@@ -35,8 +36,8 @@ const Navbar = () => {
              {token ? 
             <div className='h-[100%] flex flex-col group  w-[80%] items-center  relative'>
                <div className='flex items-center  h-[100%] '>
-                 <img src="../src/assets/BookMyDoc_assets/assets/assets_frontend/defaultProfilePic.jpg" alt="profile picture" className="h-[50%] profilePicture"/>
-                <img src="../src/assets/BookMyDoc_assets/assets\assets_frontend\dropdown_icon.svg" alt="" className='h-[10%] cursor-pointer dropDownIcon'
+                 <img src={assets.profile_pic} alt="profile picture" className="h-[50%] profilePicture"/>
+                <img src={assets.dropdown_icon} alt="" className='h-[10%] cursor-pointer dropDownIcon'
                 onClick={()=>display?setDisplay(false):setDisplay(true)}/>
                </div>
                <div>

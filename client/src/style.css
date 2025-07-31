@@ -49,3 +49,39 @@ margin-right:5vw;
 #practice{
   margin-top:50vh;
 }
+.homePageOuter{
+  margin-bottom: 5vh;
+}
+.specialityMenuPara{
+  margin-top:2vh;
+}
+.specialityDoctors{
+  margin-top: 6vh;
+}
+.specialityDoctordiv{
+  transition:transform 0.4s ease-in-out;
+}
+.specialityDoctordiv:hover{
+  transform: translateY(-2vh);
+}
+.outerBookDoctors{
+  margin-top: 15vh;
+}
+.innerBookDoctorsHeading{
+  margin-bottom: 2vh;
+}
+.bookDoctorsInnerCard{
+  margin-top: 7vh;
+  transition: 0.4s ease-in-out;
+}
+.bookDoctorsInnerCard:hover{
+  transform: translateY(-2vh);
+}
+.moreButton{
+  width:8vw;
+  height:4vw
+}
+.information{
+  margin-left:1.2vw;
+  margin-top:1.2vh
+}

@@ -22,9 +22,11 @@ function App() {
         <Route path='/My-Profile' element={<MyProfile/>}/>
         <Route path='/Doctors' element={<Doctors/>}/>
         <Route path='/Doctors/:speciality' element={<Doctors/>}/>
-        <Route path='/Doctors/:speciality' element={<Doctors/>}/>
+    
         <Route path='/Appointment/:speciality' element={<Appointment/>}/>
         <Route path='/Appointment' element={<Appointment/>}/>
+        <Route path='/Appointment/:id' element={<Appointment/>}/>
+        
         <Route path='/Login' element={<Login/>}/>
       </Routes>
     </div>
